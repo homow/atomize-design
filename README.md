@@ -83,9 +83,9 @@ This repo is a **personal development** and not affiliated with the original cre
 If you want to collaborate, give feedback, or just say hi:
 
 - GitHub: [@homow](https://github.com/homow)
-- Website: [homow.ir](https://homow.ir)`
+- Website: [homow.ir](https://homow.ir)
+- Telegram: [homow](https://t.me/homow_dev)
 
 ---
 
 > Made by Homow — because design deserves precision.
-```
