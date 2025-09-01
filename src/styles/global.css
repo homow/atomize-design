@@ -4,33 +4,48 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    /* break-points */
-    --breakpoint-xs: 24rem;
-    --breakpoint-sm: 36rem;
-    --breakpoint-2xl: 74rem;
-
     /* fonts */
     --font-geist: 'geist', "Arial", sans-serif;
     --font-geist-mono: "geist-mono", "monospace", sans-serif;
 
     /* colors */
-    --color-priamry-text: oklch(13% 0.028 261.692);
-    --color-primary-gray: oklch(37.3% 0.034 259.733);
+    --color-primary-base: #000;
     --color-primary-bg: oklch(98.5% 0.002 247.839);
+    --color-primary-text: oklch(13% 0.028 261.692);
+    --color-primary-gray: oklch(37.3% 0.034 259.733);
+    --color-gray-lt: oklch(92.8% 0.006 264.531);
+    --color-gray-hover: oklch(87.2% 0.01 258.338);
+
+    /* shadow */
+    --shadow-primary: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
 }
 
-@variant dark {
-    @theme {
-        --color-priamry-text: oklch(98.5% 0.002 247.839);
-    }
+.dark {
+    /* colors */
+    --color-primary-base: #fff;
+    --color-primary-text: oklch(98.5% 0.002 247.839);
+    --color-primary-gray: oklch(87.2% 0.01 258.338);
+    --color-primary-bg: oklch(0.11 0.034 261.676);
+
+    /* shadow */
+    --shadow-primary: 0 0 1px 0 rgb(17 19 22 / 10%), 0 16px 16px -1px rgb(44 54 63 / 20%);
 }
 
 @layer base {
     body {
-        @apply font-geist font-normal text-gray-950 dark:text-gray-50 dark:bg-slate-950;
+        @apply font-geist font-normal bg-primary-bg text-primary-text;
     }
 }
 
 @utility container {
-    @apply mx-auto px-2;
+    @apply max-w-296 mx-auto px-3;
 }
+
+@utility nav-menu-mobile {
+    @apply absolute flex flex-col gap-4 px-4 py-4 -top-full left-0 right-0 opacity-0 invisible transition-all duration-600 pointer-events-none peer-checked:opacity-100 peer-checked:top-full peer-checked:visible peer-checked:pointer-events-auto;
+    box-shadow: var(--shadow-primary);
+}
+
+/*@utility nav-menu-desktop {*/
+
+/*}*/
