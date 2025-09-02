@@ -4,6 +4,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+    /* breakpoints */
+    --breakpoint-xs: 24rem;
+    --breakpoint-sm: 36rem;
+
     /* fonts */
     --font-geist: 'geist', "Arial", sans-serif;
     --font-geist-mono: "geist-mono", "monospace", sans-serif;
@@ -13,8 +17,9 @@
     --color-primary-bg: oklch(98.5% 0.002 247.839);
     --color-primary-text: oklch(13% 0.028 261.692);
     --color-primary-gray: oklch(37.3% 0.034 259.733);
-    --color-gray-lt: oklch(92.8% 0.006 264.531);
-    --color-gray-hover: oklch(87.2% 0.01 258.338);
+    --color-border-gray: oklch(87.2% 0.01 258.338);
+    --color-border-gray-hover: oklch(70.7% 0.022 261.325);
+    --color-bg-gray-hover-lt: oklch(96.7% 0.003 264.542);
 
     /* shadow */
     --shadow-primary: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
@@ -26,19 +31,28 @@
     --color-primary-text: oklch(98.5% 0.002 247.839);
     --color-primary-gray: oklch(87.2% 0.01 258.338);
     --color-primary-bg: oklch(0.11 0.034 261.676);
+    --color-border-gray: oklch(55.1% 0.027 264.364);
+    --color-border-gray-hover: oklch(0.693 0.037 260.36);
+    --color-bg-gray-hover-lt: oklch(21% 0.034 264.665);
 
     /* shadow */
     --shadow-primary: 0 0 1px 0 rgb(17 19 22 / 10%), 0 16px 16px -1px rgb(44 54 63 / 20%);
 }
 
 @layer base {
+    html {
+        @apply scroll-smooth;
+    }
     body {
-        @apply font-geist font-normal bg-primary-bg text-primary-text;
+        @apply font-geist font-normal leading-7 bg-primary-bg text-primary-text;
+    }
+    h1 {
+        @apply font-bold text-4xl leading-15 text-center md:text-5xl;
     }
 }
 
 @utility container {
-    @apply max-w-296 mx-auto px-3;
+    @apply max-w-296 mx-auto px-4;
 }
 
 @utility nav-menu-mobile {

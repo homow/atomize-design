@@ -1,7 +1,7 @@
-import Icons from "@/components/Icons.jsx";
-import Header from "@/components/Header/Header.jsx";
-import Main from "@/components/Main/Main.jsx";
-import Footer from "@/components/Footer/Footer.jsx";
+import SvgDefs from "@/components/svg-defs/SvgDefs.jsx";
+import Header from "@/components/header/Header.jsx";
+import Main from "@/components/main/Main.jsx";
+import Footer from "@/components/footer/Footer.jsx";
 import {Component, StrictMode} from "react";
 
 class App extends Component {
@@ -9,7 +9,8 @@ class App extends Component {
         return (
             <StrictMode>
                 <>
-                    <Icons/>
+                    {/* <=== svg icons ===> */}
+                    <SvgDefs/>
                     <Header/>
                     <Main/>
                     <Footer/>

@@ -25,7 +25,7 @@ class Header extends Component {
         const {theme} = this.state;
 
         return (
-            <header className={"py-4 text-primary-gray font-medium text-sm relative"}>
+            <header className={"py-4 bg-primary-bg text-primary-gray font-medium text-sm relative"}>
                 <div className={"container flex items-center justify-between"}>
                     {/* <=== header logo ===> */}
                     <div>
@@ -53,7 +53,7 @@ class Header extends Component {
                         </label>
 
                         {/* <=== navigation menu ===> */}
-                        <ul className={"max-md:nav-menu-mobile md:flex md:flex-row md:items-center md:gap-8 lg:gap-10"}>
+                        <ul className={"bg-primary-bg max-md:nav-menu-mobile md:flex md:flex-row md:items-center md:gap-8 lg:gap-10"}>
                             <li>
                                 <a className={"hover:text-primary-text transition-all"} href={"#feature"}>Feature</a>
                             </li>
@@ -61,10 +61,10 @@ class Header extends Component {
                                 <a target="_blank" className={"hover:text-primary-text transition-all"} href="https://github.com/homow">GitHub</a>
                             </li>
                             <li>
-                                <a target="_blank" className={"hover:text-primary-text transition-all"} href="https://homow.github.io/kasuka">For Designers</a>
+                                <a target="_blank" className={"hover:text-primary-text transition-all"} href="https://www.youtube.com/@homow_dev">For Designers</a>
                             </li>
                             <li className={"text-center"}>
-                                <a target="_blank" className={"transition-all mt-4 md:mt-0 px-8 py-2 rounded-lg inline-block text-gray-900 bg-gray-lt hover:bg-gray-hover"} href="https://homow.ir">Documentation</a>
+                                <a target="_blank" className={"transition-all mt-4 md:mt-0 px-8 py-2 rounded-lg inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 w-full"} href="https://homow.ir">Documentation</a>
                             </li>
                         </ul>
                     </nav>
