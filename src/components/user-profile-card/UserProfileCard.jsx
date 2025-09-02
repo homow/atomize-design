@@ -3,7 +3,7 @@ import {Component} from "react";
 class UserProfileCard extends Component {
     render() {
         return (
-            <div className={"shadow-rounded-box p-8"}>
+            <div className={"shadow-rounded-box p-8.5"}>
                 {/* <=== picture profile card ===> */}
                 <div className={"size-18 mx-auto rounded-full overflow-hidden"}>
                     <img className={"w-full"} src="/src/static/girl-user.webp" alt="girl-user"/>
@@ -20,11 +20,11 @@ class UserProfileCard extends Component {
                 </div>
 
                 {/* <=== buttons profile card ===> */}
-                <div className={"mt-8 flex gap-6 justify-center *:text-sm *:font-medium *:flex *:flex-row *:items-center *:justify-between *:w-full *:rounded-full *:cursor-pointer *:px-4 *:py-2"}>
+                <div className={"mt-12 flex gap-6 justify-center text-xs  xx:*:text-sm *:font-medium *:flex *:flex-row *:items-center *:justify-between *:w-full *:rounded-full *:cursor-pointer *:px-4 *:py-2 *:gap-2"}>
                     <button type="button" className={"primary-btn"}>
                         Follow
                         <svg className={"size-5 fill-white"}>
-                            <use href="#follow-icon"></use>
+                            <use href="#plus-icon"></use>
                         </svg>
                     </button>
                     <button type="button" className={"secondary-btn"}>

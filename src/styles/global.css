@@ -5,6 +5,7 @@
 
 @theme {
     /* breakpoints */
+    --breakpoint-xx: 21rem;
     --breakpoint-xs: 24rem;
     --breakpoint-sm: 36rem;
 
@@ -43,13 +44,13 @@
 
 @layer base {
     html {
-        @apply scroll-smooth;
+        @apply scroll-smooth text-[15px] xx:text-base;
     }
     body {
-        @apply font-geist font-normal leading-7 bg-primary-bg text-primary-text;
+        @apply font-geist xs:font-normal leading-7 bg-primary-bg text-primary-text;
     }
     h1 {
-        @apply font-bold text-4xl leading-15 text-center md:text-5xl;
+        @apply font-bold text-3xl text-center leading-12 xs:text-4xl xs:leading-15 md:text-5xl;
     }
 }
 
