@@ -37,7 +37,7 @@ class Header extends Component {
                     </div>
 
                     {/* <=== navigation header ===> */}
-                    <nav className={"flex flex-row items-center gap-4"}>
+                    <nav className={"flex flex-row items-center gap-5 md:gap-8"}>
                         {/* <=== theme toggle button ===> */}
                         <div id={"theme-toggle"} className={"max-w-max"} onClick={this.toggleTheme}>
                             <svg className={"size-6 cursor-pointer stroke-primary-base fill-primary-base"}>

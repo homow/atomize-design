@@ -5,6 +5,7 @@ class Main extends Component {
     render () {
         return (
             <main className={"pt-14"}>
+                {/* <=== hero section ===> */}
                 <HeroSection/>
             </main>
         )
