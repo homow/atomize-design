@@ -1,8 +1,8 @@
-import SvgDefs from "@/components/svg-defs/SvgDefs.jsx";
-import Header from "@/components/header/Header.jsx";
-import Main from "@/components/main/Main.jsx";
-import Footer from "@/components/footer/Footer.jsx";
 import {Component, StrictMode} from "react";
+import SvgDefs from "@/components/icons/SvgDefs.jsx";
+import Header from "@/layout/header/Header.jsx";
+import Main from "@/layout/main/Main.jsx";
+import Footer from "@/layout/footer/Footer.jsx";
 
 class App extends Component {
     render() {

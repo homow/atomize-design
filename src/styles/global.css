@@ -17,6 +17,7 @@
     --color-primary-bg: oklch(98.5% 0.002 247.839);
     --color-primary-text: oklch(13% 0.028 261.692);
     --color-primary-gray: oklch(37.3% 0.034 259.733);
+    --color-gray-lt: oklch(70.7% 0.022 261.325);
     --color-border-gray: oklch(87.2% 0.01 258.338);
     --color-border-gray-hover: oklch(70.7% 0.022 261.325);
     --color-bg-gray-hover-lt: oklch(96.7% 0.003 264.542);
@@ -30,6 +31,7 @@
     --color-primary-base: #fff;
     --color-primary-text: oklch(98.5% 0.002 247.839);
     --color-primary-gray: oklch(87.2% 0.01 258.338);
+    --color-gray-lt: oklch(0.532 0.041 274.746);
     --color-primary-bg: oklch(0.11 0.034 261.676);
     --color-border-gray: oklch(55.1% 0.027 264.364);
     --color-border-gray-hover: oklch(0.693 0.037 260.36);
@@ -58,4 +60,16 @@
 @utility nav-menu-mobile {
     @apply absolute flex flex-col gap-4 px-4 py-4 -top-full left-0 right-0 opacity-0 invisible transition-all duration-600 pointer-events-none peer-checked:opacity-100 peer-checked:top-full peer-checked:visible peer-checked:pointer-events-auto;
     box-shadow: var(--shadow-primary);
+}
+
+@layer components {
+    .primary-btn {
+        @apply bg-blue-500 text-white transition-all hover:opacity-90;
+    }
+    .secondary-btn {
+        @apply text-primary-gray border transition-all hover:bg-bg-gray-hover-lt border-border-gray  hover:border-border-gray-hover;
+    }
+    .shadow-rounded-box {
+        @apply shadow-primary rounded-lg border border-gray-100 dark:border-gray-900;
+    }
 }

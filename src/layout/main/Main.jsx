@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import HeroSection from '@/components/Main/hero-section/HeroSection.jsx';
+import HeroSection from '@/layout/main/hero-section/HeroSection.jsx';
 
 class Main extends Component {
     render () {
