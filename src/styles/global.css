@@ -45,7 +45,3 @@
     @apply absolute flex flex-col gap-4 px-4 py-4 -top-full left-0 right-0 opacity-0 invisible transition-all duration-600 pointer-events-none peer-checked:opacity-100 peer-checked:top-full peer-checked:visible peer-checked:pointer-events-auto;
     box-shadow: var(--shadow-primary);
 }
-
-/*@utility nav-menu-desktop {*/
-
-/*}*/

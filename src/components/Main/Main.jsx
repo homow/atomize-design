@@ -1,8 +1,13 @@
-function Main() {
-    return (
-        <main>
-        </main>
-    )
+import { Component } from 'react';
+
+class Main extends Component {
+    render () {
+        return (
+            <main>
+
+            </main>
+        )
+    }
 }
 
 export default Main

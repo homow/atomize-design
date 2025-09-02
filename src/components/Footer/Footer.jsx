@@ -1,9 +1,13 @@
-function Footer() {
-    return (
-        <footer>
+import {Component} from "react";
 
-        </footer>
-    )
+class Footer extends Component {
+    render () {
+        return (
+            <footer>
+
+            </footer>
+        )
+    }
 }
 
 export default Footer
