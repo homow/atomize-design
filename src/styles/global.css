@@ -70,6 +70,9 @@
     .secondary-btn {
         @apply text-primary-gray border transition-all hover:bg-bg-gray-hover-lt border-border-gray  hover:border-border-gray-hover;
     }
+    .btn-bg-blue {
+        @apply bg-blue-100 dark:bg-blue-500 font-bold cursor-pointer text-blue-500 dark:text-blue-100 hover:bg-blue-200 transition-all dark:hover:bg-blue-600 text-sm rounded-full py-3 px-8;
+    }
     .shadow-rounded-box {
         @apply shadow-primary rounded-lg border border-gray-100 dark:border-gray-900;
     }
