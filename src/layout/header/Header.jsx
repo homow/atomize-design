@@ -47,9 +47,9 @@ class Header extends Component {
 
                         {/* <=== menu toggle button ===> */}
                         <input type="checkbox" id={"menu-toggle"} className={"opacity-0 invisible inset-0 absolute peer"}/>
-                        <label htmlFor={"menu-toggle"} className={"md:hidden size-5 cursor-pointer relative peer-checked:-translate-0.5 transition-all duration-600 *:absolute *:bg-primary-base *:h-0.5 *:w-full *:block *:transition-all *:duration-600 peer-checked:[&>span:nth-child(1)]:rotate-135 peer-checked:[&>span:nth-child(1)]:top-[60%] peer-checked:[&>span:nth-child(1)]:left-0 peer-checked:[&>span:nth-child(2)]:rotate-45"}>
-                            <span className={"top-3/10"}></span>
-                            <span className={"bottom-3/10"}></span>
+                        <label htmlFor={"menu-toggle"} className={"md:hidden size-5 cursor-pointer relative peer-checked:-translate-0.5 transition-all duration-600 *:absolute *:bg-primary-base *:w-full *:block *:transition-all *:duration-600 peer-checked:[&>span:nth-child(1)]:rotate-135 peer-checked:[&>span:nth-child(1)]:top-[60%] peer-checked:[&>span:nth-child(1)]:left-0 peer-checked:[&>span:nth-child(2)]:rotate-45"}>
+                            <span className={"h-[2px] top-3/10"}></span>
+                            <span className={"h-[2px] bottom-3/10"}></span>
                         </label>
 
                         {/* <=== navigation menu ===> */}

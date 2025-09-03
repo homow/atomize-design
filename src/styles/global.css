@@ -50,7 +50,7 @@
         @apply font-geist xs:font-normal leading-7 bg-primary-bg text-primary-text;
     }
     h1 {
-        @apply font-bold text-3xl text-center leading-12 xs:text-4xl xs:leading-15 md:text-5xl;
+        @apply font-medium text-3xl text-center leading-12 xs:text-4xl xs:leading-15 md:text-5xl;
     }
 }
 
