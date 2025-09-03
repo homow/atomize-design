@@ -4,6 +4,11 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+    /* breakpoints */
+    --breakpoint-xx: 21rem;
+    --breakpoint-xs: 24rem;
+    --breakpoint-sm: 36rem;
+
     /* fonts */
     --font-geist: 'geist', "Arial", sans-serif;
     --font-geist-mono: "geist-mono", "monospace", sans-serif;
@@ -13,8 +18,10 @@
     --color-primary-bg: oklch(98.5% 0.002 247.839);
     --color-primary-text: oklch(13% 0.028 261.692);
     --color-primary-gray: oklch(37.3% 0.034 259.733);
-    --color-gray-lt: oklch(92.8% 0.006 264.531);
-    --color-gray-hover: oklch(87.2% 0.01 258.338);
+    --color-gray-lt: oklch(70.7% 0.022 261.325);
+    --color-border-gray: oklch(87.2% 0.01 258.338);
+    --color-border-gray-hover: oklch(70.7% 0.022 261.325);
+    --color-bg-gray-hover-lt: oklch(96.7% 0.003 264.542);
 
     /* shadow */
     --shadow-primary: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
@@ -25,20 +32,30 @@
     --color-primary-base: #fff;
     --color-primary-text: oklch(98.5% 0.002 247.839);
     --color-primary-gray: oklch(87.2% 0.01 258.338);
+    --color-gray-lt: oklch(0.532 0.041 274.746);
     --color-primary-bg: oklch(0.11 0.034 261.676);
+    --color-border-gray: oklch(55.1% 0.027 264.364);
+    --color-border-gray-hover: oklch(0.693 0.037 260.36);
+    --color-bg-gray-hover-lt: oklch(21% 0.034 264.665);
 
     /* shadow */
     --shadow-primary: 0 0 1px 0 rgb(17 19 22 / 10%), 0 16px 16px -1px rgb(44 54 63 / 20%);
 }
 
 @layer base {
+    html {
+        @apply scroll-smooth text-[15px] xx:text-base;
+    }
     body {
-        @apply font-geist font-normal bg-primary-bg text-primary-text;
+        @apply font-geist xs:font-normal leading-7 bg-primary-bg text-primary-text;
+    }
+    h1 {
+        @apply font-bold text-3xl text-center leading-12 xs:text-4xl xs:leading-15 md:text-5xl;
     }
 }
 
 @utility container {
-    @apply max-w-296 mx-auto px-3;
+    @apply max-w-296 mx-auto px-4;
 }
 
 @utility nav-menu-mobile {
@@ -46,6 +63,17 @@
     box-shadow: var(--shadow-primary);
 }
 
-/*@utility nav-menu-desktop {*/
-
-/*}*/
+@layer components {
+    .primary-btn {
+        @apply bg-blue-500 text-white transition-all hover:opacity-90;
+    }
+    .secondary-btn {
+        @apply text-primary-gray border transition-all hover:bg-bg-gray-hover-lt border-border-gray  hover:border-border-gray-hover;
+    }
+    .btn-bg-blue {
+        @apply bg-blue-100 dark:bg-blue-500 font-bold cursor-pointer text-blue-500 dark:text-blue-100 hover:bg-blue-200 transition-all dark:hover:bg-blue-600 text-sm rounded-full py-3 px-8;
+    }
+    .shadow-rounded-box {
+        @apply shadow-primary rounded-lg border border-gray-100 dark:border-gray-900;
+    }
+}
