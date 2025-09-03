@@ -8,8 +8,9 @@ class BottomHeroSection extends Component {
     render() {
         return (
             <div className={"container mt-20 space-y-20 md:space-y-0 md:flex md:items-center md:justify-center md:gap-12 lg:gap-6"}>
-                {/* <=== user profile card and icon ===> */}
+                {/* <=== user profile card and circle icon ===> */}
                 <div>
+                    {/* <=== circle icon ===> */}
                     <div className={"mb-8 space-x-2 text-center"}>
                         <CircleIconsBox icon={<svg className={"fill-red-500 size-4.5"}>
                             <use href="#heart-icon"></use>
@@ -30,6 +31,8 @@ class BottomHeroSection extends Component {
                             <use href="#play-icon"></use>
                         </svg>}/>
                     </div>
+
+                    {/* <=== user profile card ===> */}
                     <UserProfileCard/>
                 </div>
 

@@ -78,6 +78,36 @@ class SvgDefs extends Component {
                         d="M22.0001063,5.98448999 C22.0002481,5.99422236 22.0002479,6.00395091 22.0001063,6.01367238 L22.0001063,18.5 C22.0001063,19.3284271 21.3285334,20 20.5001063,20 L3.50010627,20 C2.67167915,20 2.00010627,19.3284271 2.00010627,18.5 L2.00010627,6.01367238 C1.99996468,6.00395091 1.99996447,5.99422236 2.00010627,5.98448999 L2.00010627,5.5 C2.00010627,4.67157288 2.67167915,4 3.50010627,4 L20.5001063,4 C21.3285334,4 22.0001063,4.67157288 22.0001063,5.5 L22.0001063,5.98448994 Z M4.80288191,6 L12.0001063,10.7981496 L19.1973306,6 L4.80288191,6 Z M20.0001063,7.86851709 L12.5548065,12.8320503 C12.2189071,13.0559832 11.7813055,13.0559832 11.4454061,12.8320503 L4.00010627,7.86851709 L4.00010627,18 L20.0001063,18 L20.0001063,7.86851709 Z"
                     />
                 </symbol>
+                {/* <=== flexible ===> */}
+                <symbol id={"flexible-icon"} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <g fill="none" fillRule="evenodd">
+                        <rect width="32" height="32" fill="#FFC148" rx="3"/>
+                        <path stroke="#000" strokeLinecap="square" strokeWidth="2" d="M21.5 1L21.5 31M10.5 1L10.5 31"/>
+                    </g>
+                </symbol>
+                {/* <=== style ===> */}
+                <symbol id={"style-icon"} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <g fill="none" fillRule="evenodd">
+                        <rect width="32" height="32" fill="#FF6B38" rx="3"/>
+                        <path stroke="#000" strokeWidth="2" d="M2.73376067,9.42433109 C2.54450231,9.21993206 2.27856362,9.10373912 2,9.10373912 C1.44771525,9.10373912 1,9.55145437 1,10.1037391 L1,29 C1,30.1045695 1.8954305,31 3,31 L20.4224638,31 C20.6743841,31 20.9170226,30.9049173 21.1018718,30.7337607 C21.5071166,30.358534 21.5314511,29.7258368 21.1562245,29.320592 L2.73376067,9.42433109 Z"/>
+                    </g>
+                </symbol>
+                {/* <=== spacing ===> */}
+                <symbol id={"spacing-icon"} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <g fill="none" fillRule="evenodd">
+                        <rect width="32" height="32" fill="#1CDB9E" rx="3"/>
+                        <rect width="11" height="11" x="20" y="20" stroke="#000" strokeWidth="2"/>
+                        <rect width="11" height="11" x="1" y="1" stroke="#000" strokeWidth="2"/>
+                    </g>
+                </symbol>
+                {/* <=== responsive ===> */}
+                <symbol id={"responsive-icon"} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <g fill="none" fillRule="evenodd">
+                        <rect width="12" height="16" x="20" y="16" fill="#43A4FF" rx="3"/>
+                        <rect width="32" height="11" fill="#43A4FF" rx="3"/>
+                        <rect width="11" height="14" x="1" y="17" stroke="#000" strokeWidth="2"/>
+                    </g>
+                </symbol>
             </svg>
         )
     }
