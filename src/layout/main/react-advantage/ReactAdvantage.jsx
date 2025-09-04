@@ -7,11 +7,13 @@ class ReactAdvantage extends Component {
             <section className={"pt-20"}>
                 <div className={"container"}>
                     {/* <=== circle borders box ===> */}
-                    <div>
-                        <div className={"opacity-10 border-2"}></div>
-                        <div className={"opacity-10 border-2"}></div>
-                        <div className={"opacity-10 border-2"}></div>
-                        <div className={"opacity-10 border-2"}></div>
+                    <div className={"relative my-20 size-80"}>
+                        <div className={"*:absolute *:border-2 *:rounded-full *:p-4 *:inline-block *:top-1/2 *:left-1/2 *:-translate-1/2"}>
+                            <div className={"w-full h-full opacity-15"}></div>
+                            <div className={"w-8/10 h-8/10 opacity-25"}></div>
+                            <div className={"w-6/10 h-6/10 opacity-35"}></div>
+                            <div className={"w-4/10 h-4/10 opacity-45"}></div>
+                        </div>
                     </div>
                     <div>
                         {/* <=== info ===> */}
