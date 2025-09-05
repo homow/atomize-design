@@ -6,19 +6,19 @@ class ReactAdvantage extends Component {
     render() {
         return (
             <section className={"pt-20"}>
-                <div className={"container"}>
+                <div className={"container space-y-12 lg:space-y-0 lg:flex gap-2 justify-between items-start"}>
                     {/* <=== circle borders box ===> */}
                     <ReactAdvantageCircleBorder/>
 
                     {/* <=== react advantage info and icons ===> */}
-                    <div>
+                    <div className={"lg:basis-2/4"}>
                         {/* <=== info ===> */}
                         <h2 className={"font-bold text-3xl tracking-wider leading-10 md:text-4xl"}>
                             Elegant & consistent UI, powered by <span className={"text-cyan-400"}>React</span>.
                         </h2>
 
                         {/* <=== advantage react icon, title and text ===> */}
-                        <div className={"container mt-8 max-xx:space-y-6 xx:grid xx:grid-cols-2 xx:gap-3"}>
+                        <div className={"container mt-8 max-xx:space-y-6 xx:grid xx:grid-cols-2 xx:gap-x-3 xx:gap-y-10 lg:grid-cols-3"}>
                             <AdvantageReactIcon icon={<svg className={"w-10 h-10"}>
                                 <use href="#atomic-icon"></use>
                             </svg>} title={"Atomic"} text={"Based on Atomic Design Methodology."}/>
