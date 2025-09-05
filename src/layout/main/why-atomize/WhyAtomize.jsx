@@ -4,8 +4,8 @@ import FeatureIconTitle from "@/layout/main/why-atomize/feature-icon-title/Featu
 class WhyAtomize extends Component {
     render() {
         return (
-            <section id={"feature"} className={"pt-20"}>
-                <div className={"container space-y-14"}>
+            <section id={"feature"} className={"py-40 container"}>
+                <div className={"space-y-14"}>
                     <div className={"space-y-4"}>
                         <h2 className={"bg-primary-base text-primary-bg max-w-max py-1.5 px-4 rounded-full text-xs font-medium"}>Key Feature</h2>
 

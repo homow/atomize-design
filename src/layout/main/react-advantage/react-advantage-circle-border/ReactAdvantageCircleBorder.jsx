@@ -3,7 +3,7 @@ import {Component} from 'react';
 class ReactAdvantageCircleBorder extends Component {
     render() {
         return (
-            <div className={"mx-auto relative size-80 hidden xs:block"}>
+            <div className={"mx-auto relative size-80 hidden xs:block lg:mx-0"}>
                 <div className={"*:absolute"}>
 
                     {/* <=== circle border ===> */}
