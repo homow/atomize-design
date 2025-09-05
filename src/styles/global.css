@@ -11,7 +11,7 @@
 
     /* fonts */
     --font-geist: 'geist', "Arial", sans-serif;
-    --font-geist-mono: "geist-mono", "monospace", sans-serif;
+    --font-code: 'Fira Code','Roboto Mono', monospace;
 
     /* colors */
     --color-primary-base: #000;

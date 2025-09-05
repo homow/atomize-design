@@ -5,8 +5,8 @@ import ReactAdvantageCircleBorder from "@/layout/main/react-advantage/react-adva
 class ReactAdvantage extends Component {
     render() {
         return (
-            <section className={"pt-20"}>
-                <div className={"container space-y-12 lg:space-y-0 lg:flex gap-2 justify-between items-start"}>
+            <section className={"py-40 container"}>
+                <div className={"space-y-12 lg:space-y-0 lg:flex gap-2 justify-between items-start"}>
                     {/* <=== circle borders box ===> */}
                     <ReactAdvantageCircleBorder/>
 
