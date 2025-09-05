@@ -25,6 +25,18 @@
 
     /* shadow */
     --shadow-primary: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+
+    /* float animation */
+    --animate-floating-box: floatY 12s linear infinite;
+
+    @keyframes floatY {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-1400px);
+        }
+    }
 }
 
 .dark {

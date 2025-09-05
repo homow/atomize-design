@@ -3,9 +3,9 @@ import { Component } from 'react';
 class CodeText extends Component {
     render() {
         return (
-            <div className="h-90 w-full lg:h-auto font-geist-mono font-light bg-black rounded-3xl pt-4 px-4 pb-1 text-gray-400 overflow-hidden">
+            <div className="h-90 w-full lg:h-auto font-geist-mono font-light bg-black rounded-3xl pt-4 px-4 pb-1 text-gray-400 overflow-hidden selection:bg-amber-500 selection:text-black border border-transparent dark:border-gray-900">
         <pre className="leading-relaxed">
-          <code className={"font-code text-sm font-light tracking-wide"}>
+          <code className={"font-code text-xs font-light tracking-wide"}>
             <span className="text-amber-300">const</span>{" "}
               <span className="text-teal-500">PaymentCardBlock</span> = () =&gt; (<br />
 
