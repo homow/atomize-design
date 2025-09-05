@@ -14,16 +14,26 @@ class ReactAdvantageCircleBorder extends Component {
 
                     {/* <=== react icon ===> */}
                     <span className={"left-1/2 top-1/2 -translate-1/2 max-w-max"}>
-                                <svg className={"w-25 h-[6rem]"}>
-                                    <use href="#big-react-icon"></use>
-                                </svg>
-                            </span>
+                        <svg className={"w-[4.375rem] h-[4.5rem]"}>
+                            <use href="#big-react-icon"></use>
+                        </svg>
+                    </span>
 
+                    {/* <=== turn on green icon ===> */}
+                    <span className={"top-5 right-21 w-12 h-6 rounded-full p-2 bg-green-700 shadow-primary flex items-center justify-end-safe"}>
+                        <span className={"inline-block bg-white w-5 h-4 rounded-full z-10"}></span>
+                    </span>
+
+                    {/* <=== plus circle icon ===> */}
                     <span className={"bg-orange-300 rounded-full p-2 top-20 left-8 shadow-primary"}>
-                                <svg className={"w-5 h-5 fill-primary-bg"}>
-                                    <use href="#plus-icon"></use>
-                                </svg>
-                            </span>
+                        <svg className={"w-5 h-5 fill-primary-bg"}>
+                            <use href="#plus-icon"></use>
+                        </svg>
+                    </span>
+
+                    {/* <=== signup button ===> */}
+
+                    {/* <=== tick icon ===> */}
                 </div>
             </div>
         );
