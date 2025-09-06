@@ -3,7 +3,7 @@ import {Component} from 'react';
 class ReactAdvantageCircleBorder extends Component {
     render() {
         return (
-            <div className={"mx-auto relative size-80 hidden xs:block lg:mx-0"}>
+            <div className={"mx-auto relative size-60 xs:size-80 lg:mx-0"}>
                 <div className={"*:absolute"}>
 
                     {/* <=== circle border ===> */}
@@ -14,7 +14,7 @@ class ReactAdvantageCircleBorder extends Component {
 
                     {/* <=== react icon ===> */}
                     <span className={"left-1/2 top-1/2 -translate-1/2 max-w-max"}>
-                        <svg className={"w-[4.375rem] h-[4.5rem]"}>
+                        <svg className={"size-12 xs:w-[4.375rem] xs:h-[4.5rem]"}>
                             <use href="#big-react-icon"></use>
                         </svg>
                     </span>
@@ -32,7 +32,7 @@ class ReactAdvantageCircleBorder extends Component {
                     </span>
 
                     {/* <=== signup button ===> */}
-                    <button type="button" className={"bg-blue-500 px-5 py-2 rounded-lg shadow-primary font-medium text-white text-sm bottom-16 transition-all right-0 hover:opacity-90 cursor-pointer"}>Sign Up</button>
+                    <button type="button" className={"bg-blue-500 rounded-lg shadow-primary font-medium text-white bottom-16 transition-all right-0 hover:opacity-90 cursor-pointer px-2 py-1 text-xs xs:px-5 xs:py-2 xs:text-sm"}>Sign Up</button>
 
                     {/* <=== tick icon ===> */}
                     <span className={"rounded-lg shadow-primary bottom-10 left-6"}>

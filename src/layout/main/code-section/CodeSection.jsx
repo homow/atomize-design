@@ -5,7 +5,7 @@ import UserBoxes from "@/layout/main/code-section/user-boxes/UserBoxes.jsx";
 class CodeSection extends Component {
     render() {
         return (
-            <section className={"py-40 container"}>
+            <section className={"py-30 container"}>
                 <div className={"relative"}>
 
                     {/* <=== code text ===> */}
@@ -14,7 +14,7 @@ class CodeSection extends Component {
                     </div>
 
                     {/* <=== user boxes ===> */}
-                    <div className={"absolute rounded-lg overflow-hidden max-h-140 left-1/2 -translate-x-1/2 top-full sm:right-0 sm:left-auto sm:translate-x-0 sm:top-1/2 sm:-translate-y-1/2 sm:max-h-180 w-full"}>
+                    <div className={"absolute rounded-lg overflow-hidden max-h-140 left-1/2 -translate-x-1/2 top-full w-full xx:w-auto sm:right-0 sm:left-auto sm:translate-x-0 sm:top-1/2 sm:-translate-y-1/2 sm:max-h-180"}>
 
                         {/* <=== user profile and payment card ===> */}
                         <div className={"animate-floating-box space-y-3"}>
