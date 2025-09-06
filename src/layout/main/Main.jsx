@@ -4,6 +4,7 @@ import WhyAtomize from "@/layout/main/why-atomize/WhyAtomize.jsx";
 import ReactAdvantage from "@/layout/main/react-advantage/ReactAdvantage.jsx";
 import CodeSection from "@/layout/main/code-section/CodeSection.jsx";
 import ModernTools from "@/layout/main/modern-tools/ModernTools.jsx";
+import OverView from "@/layout/main/overview/OverView.jsx";
 
 class Main extends Component {
     render () {
@@ -23,6 +24,9 @@ class Main extends Component {
 
                 {/* <=== modern tools section ===> */}
                 <ModernTools/>
+
+                {/* <=== overview section ===> */}
+                <OverView/>
             </main>
         )
     }

@@ -5,7 +5,7 @@ class ModernToolsBox extends Component {
         const {icon, title, text, btnText} = this.props;
 
         return (
-            <div className={"shadow-primary bg-primary-bg rounded-lg space-y-6 p-8 border border-gray-100 dark:border-gray-900"}>
+            <div className={"shadow-primary bg-primary-bg rounded-lg space-y-4 p-8 border border-gray-100 dark:border-gray-900 sm:max-w-80"}>
                 {icon}
 
                 <h3 className={"text-lg sm:text-2xl font-medium"}>
