@@ -27,7 +27,7 @@ It includes:
 
 - Vite  
 - TailwindCss 4
-- React 18  
+- React 19  
 - Atomize-inspired UI logic  
 - Custom components & layout system  
 - ESLint + Prettier + Git hooks
@@ -40,13 +40,15 @@ atomize-design/
 ├── public/                        
 ├── src/
 │   ├── components/
+│   │   └── icons/SvgDefs.jsx   # svg icons
+│   ├── layout/
 │   │   ├── Header/
 │   │   ├── Main/
 │   │   └── Footer/
 │   ├── styles/
-│   ├── static/        # Static assets (e.g. SVGs, icons, etc.)
+│   ├── static/                 # Static assets (e.g. SVGs, icons, etc.)
 │   ├── App.jsx
-│   └── index.jsx      # Entry point for React rendering
+│   └── index.jsx               # Entry point for React rendering
 ├── index.html
 ├── .gitignore
 ├── .gitattributes
@@ -66,6 +68,14 @@ git clone https://github.com/homow/atomize-design.git
 cd atomize-design
 npm install
 npm run dev
+```
+
+
+## 🛠️ Build and Deploy
+
+```bash
+npm run build
+npm run deploy  # deploy on gh-pages
 ```
 
 ---

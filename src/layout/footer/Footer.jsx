@@ -104,7 +104,7 @@ class Footer extends Component {
                         </a>
 
                         <a href={"https://atomizecode.com/"} target={"_blank"}>
-                            Designed & Developed by Proksh Luthra
+                            Designed by Proksh Luthra
                         </a>
                     </div>
                     {/* <=== footer social media ===> */}
