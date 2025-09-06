@@ -3,7 +3,7 @@ import {Component} from 'react';
 class MoreTemplate extends Component {
     render() {
         return (
-            <section className={"border-none py-10 bg-bg-gray-hover-lt md:container md:rounded-[3.5rem]"}>
+            <section id={"more-template"} className={"border-none py-10 bg-bg-gray-hover-lt md:container md:rounded-[3.5rem]"}>
                 <div className={"container tracking-wide md:flex items-center justify-between"}>
 
                     <div>

@@ -23,15 +23,6 @@ class Footer extends Component {
                         text: "Atoms",
                         href: "https://github.com/homow/"
                     },
-                    {
-                        text: "Molecules",
-                        href: "https://youtube.com/@homow_dev"
-                    },
-                    {
-                        text: "Functions",
-                        href: "https://homow.ir"
-                    },
-
                 ]
             },
             {
@@ -99,8 +90,8 @@ class Footer extends Component {
         const list = array.map((l, i) => <LinksList key={i} arrayLinks={l}/>);
 
         return (
-            <footer className={"container"}>
-                <div className={"grid gap-y-8 grid-cols-[repeat(2,auto)] justify-between"}>
+            <footer id={"footer"} className={"container"}>
+                <div className={"hidden sm:grid sm:grid-cols-5 gap-y-8 gap-x-8 grid-cols-[repeat(3,auto)] justify-between"}>
                     {list}
                 </div>
             </footer>

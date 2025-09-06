@@ -5,7 +5,7 @@ import UserBoxes from "@/layout/main/code-section/user-boxes/UserBoxes.jsx";
 class CodeSection extends Component {
     render() {
         return (
-            <section className={"container pt-30 pb-140 sm:pb-80 min-[646px]:pb-92! lg:pb-30!"}>
+            <section id={"code-section"} className={"container pt-30 pb-140 sm:pb-80 min-[646px]:pb-92! lg:pb-30!"}>
                 <div className={"relative"}>
 
                     {/* <=== code text ===> */}

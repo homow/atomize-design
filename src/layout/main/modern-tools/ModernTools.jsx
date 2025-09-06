@@ -4,7 +4,7 @@ import ModernToolsBox from "@/layout/main/modern-tools/modern-tools-box/ModernTo
 class ModernTools extends Component {
     render() {
         return (
-            <section className={"py-30 container"}>
+            <section id={"modern-tools"} className={"py-30 container"}>
                 <div>
                     <h2 className={"w-full mx-auto text-center text-3xl font-bold mb-18 tracking-wider leading-12 xs:w-10/12 sm:max-w-150 sm:text-4xl"}>
                         A combination of tools to design and develop modern applications at ease.
@@ -29,7 +29,7 @@ class ModernTools extends Component {
                                 </svg>
                             }
                             title={"Development"}
-                            text={"Bring your designs to life with Atomize for React JS."}
+                            text={"Bring designs to life with Atomize for React JS."}
                             btnText={"Documentation"}
                         />
                     </div>

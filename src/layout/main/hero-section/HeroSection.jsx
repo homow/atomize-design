@@ -5,7 +5,7 @@ import TopHeroSection from "@/layout/main/hero-section/top-hero-section/TopHeroS
 class HeroSection extends Component {
     render() {
         return (
-            <section className={"pb-22 container"}>
+            <section id={"hero-section"} className={"pb-22 container"}>
                 {/* <=== top hero section ===> */}
                 <TopHeroSection/>
                 {/* <=== bottom hero section ===> */}
