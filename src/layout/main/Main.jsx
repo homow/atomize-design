@@ -3,6 +3,7 @@ import HeroSection from '@/layout/main/hero-section/HeroSection.jsx';
 import WhyAtomize from "@/layout/main/why-atomize/WhyAtomize.jsx";
 import ReactAdvantage from "@/layout/main/react-advantage/ReactAdvantage.jsx";
 import CodeSection from "@/layout/main/code-section/CodeSection.jsx";
+import ModernTools from "@/layout/main/modern-tools/ModernTools.jsx";
 
 class Main extends Component {
     render () {
@@ -19,6 +20,9 @@ class Main extends Component {
 
                 {/* <=== code section ===> */}
                 <CodeSection/>
+
+                {/* <=== modern tools section ===> */}
+                <ModernTools/>
             </main>
         )
     }
