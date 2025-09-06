@@ -25,7 +25,7 @@ class Header extends Component {
         const {theme} = this.state;
 
         return (
-            <header className={"fixed z-20 right-0 left-0 top-0 py-4 bg-primary-bg text-primary-gray font-medium text-sm"}>
+            <header id={"header"} className={"fixed z-20 right-0 left-0 top-0 py-4 bg-primary-bg text-primary-gray font-medium text-sm"}>
                 <div className={"container flex items-center justify-between"}>
                     {/* <=== header logo ===> */}
                     <div>
