@@ -10,7 +10,7 @@ import MoreTemplate from "@/layout/main/more-template/MoreTemplate.jsx";
 class Main extends Component {
     render () {
         return (
-            <main id={"main"} className={"py-30 md:pt-40 divide-y divide-gray-200 dark:divide-gray-900"}>
+            <main id={"main"} className={"pt-30 pb-20 md:pt-40 divide-y divide-gray-200 dark:divide-gray-900"}>
                 {/* <=== hero section ===> */}
                 <HeroSection/>
 
