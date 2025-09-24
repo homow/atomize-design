@@ -29,7 +29,7 @@ class Header extends Component {
                 <div className={"container flex items-center justify-between"}>
                     {/* <=== header logo ===> */}
                     <div>
-                        <a href="/src/static">
+                        <a href="/">
                             <svg className={"w-25 h-5 stroke-primary-base fill-primary-base"}>
                                 <use href={"#header-logo"}></use>
                             </svg>
