@@ -16,7 +16,7 @@ class MoreTemplate extends Component {
                         </p>
                     </div>
 
-                    <a target={"_blank"} href={"https://youtube.com/@homow_dev"} type="button" className="max-w-max bg-primary-base text-primary-bg flex flex-row gap-4 rounded-full p-3 text-sm font-medium items-center hover:shadow-primary transition-all cursor-pointer duration-300">
+                    <a target={"_blank"} href={"https://youtube.com/@homow_dev"} type="button" className="max-w-max bg-primary-base text-primary-bg flex flex-row gap-4 rounded-full p-3 text-sm font-medium items-center hover:shadow-primary hover:opacity-80 transition-all cursor-pointer duration-300">
                         Get notified
                         <svg className={"size-4 stroke-primary-bg"}>
                             <use href="#right-arrow-icon"></use>
